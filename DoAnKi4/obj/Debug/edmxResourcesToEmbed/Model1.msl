@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="QLKQHS_DB">
+    <EntitySetMapping Name="Classes">
+      <EntityTypeMapping TypeName="Model.Class">
+        <MappingFragment StoreEntitySet="Class">
+          <ScalarProperty Name="MaLop" ColumnName="MaLop" />
+          <ScalarProperty Name="MaGiaoVien" ColumnName="MaGiaoVien" />
+          <ScalarProperty Name="TenLop" ColumnName="TenLop" />
+          <ScalarProperty Name="SiSo" ColumnName="SiSo" />
+          <ScalarProperty Name="SoNam" ColumnName="SoNam" />
+          <ScalarProperty Name="SoNu" ColumnName="SoNu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DiemTungMons">
+      <EntityTypeMapping TypeName="Model.DiemTungMon">
+        <MappingFragment StoreEntitySet="DiemTungMon">
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="MaMonHoc" ColumnName="MaMonHoc" />
+          <ScalarProperty Name="TenMonHoc" ColumnName="TenMonHoc" />
+          <ScalarProperty Name="MaHocSinh" ColumnName="MaHocSinh" />
+          <ScalarProperty Name="DiemHeSoI_HKI" ColumnName="DiemHeSoI_HKI" />
+          <ScalarProperty Name="DiemHeSoII_HKI" ColumnName="DiemHeSoII_HKI" />
+          <ScalarProperty Name="DiemHeSoIII_HKI" ColumnName="DiemHeSoIII_HKI" />
+          <ScalarProperty Name="TongKet_HKI" ColumnName="TongKet_HKI" />
+          <ScalarProperty Name="DiemHeSoI_HKII" ColumnName="DiemHeSoI_HKII" />
+          <ScalarProperty Name="DiemHeSoII_HKII" ColumnName="DiemHeSoII_HKII" />
+          <ScalarProperty Name="DiemHeSoIII_HKII" ColumnName="DiemHeSoIII_HKII" />
+          <ScalarProperty Name="TongKet_HKII" ColumnName="TongKet_HKII" />
+          <ScalarProperty Name="DiemTrungBinhCaNam" ColumnName="DiemTrungBinhCaNam" />
+          <ScalarProperty Name="MaNam" ColumnName="MaNam" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GiaoViens">
+      <EntityTypeMapping TypeName="Model.GiaoVien">
+        <MappingFragment StoreEntitySet="GiaoVien">
+          <ScalarProperty Name="MaGiaoVien" ColumnName="MaGiaoVien" />
+          <ScalarProperty Name="MaLop" ColumnName="MaLop" />
+          <ScalarProperty Name="NameGV" ColumnName="NameGV" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="LienHe" ColumnName="LienHe" />
+          <ScalarProperty Name="LaGVCN" ColumnName="LaGVCN" />
+          <ScalarProperty Name="MaMonHoc" ColumnName="MaMonHoc" />
+          <ScalarProperty Name="LinkAnh" ColumnName="LinkAnh" />
+          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HanhKiems">
+      <EntityTypeMapping TypeName="Model.HanhKiem">
+        <MappingFragment StoreEntitySet="HanhKiem">
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="MaHocSinh" ColumnName="MaHocSinh" />
+          <ScalarProperty Name="XepLoaiHanhKiemHKI" ColumnName="XepLoaiHanhKiemHKI" />
+          <ScalarProperty Name="XepLoaiHanhKiemHKII" ColumnName="XepLoaiHanhKiemHKII" />
+          <ScalarProperty Name="XepLoaiHanhKiemCaNam" ColumnName="XepLoaiHanhKiemCaNam" />
+          <ScalarProperty Name="MaNam" ColumnName="MaNam" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HocSinhs">
+      <EntityTypeMapping TypeName="Model.HocSinh">
+        <MappingFragment StoreEntitySet="HocSinh">
+          <ScalarProperty Name="MaHocSinh" ColumnName="MaHocSinh" />
+          <ScalarProperty Name="MaLop" ColumnName="MaLop" />
+          <ScalarProperty Name="NameHS" ColumnName="NameHS" />
+          <ScalarProperty Name="NoiSinh" ColumnName="NoiSinh" />
+          <ScalarProperty Name="NoiO" ColumnName="NoiO" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="LienHe" ColumnName="LienHe" />
+          <ScalarProperty Name="LinkAnh" ColumnName="LinkAnh" />
+          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NamHocs">
+      <EntityTypeMapping TypeName="Model.NamHoc">
+        <MappingFragment StoreEntitySet="NamHoc">
+          <ScalarProperty Name="MaNam" ColumnName="MaNam" />
+          <ScalarProperty Name="TenNam" ColumnName="TenNam" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhuHuynhs">
+      <EntityTypeMapping TypeName="Model.PhuHuynh">
+        <MappingFragment StoreEntitySet="PhuHuynh">
+          <ScalarProperty Name="MaHocSinh" ColumnName="MaHocSinh" />
+          <ScalarProperty Name="NamePH" ColumnName="NamePH" />
+          <ScalarProperty Name="KhuVuc" ColumnName="KhuVuc" />
+          <ScalarProperty Name="QuanHeVoiHocSinh" ColumnName="QuanHeVoiHocSinh" />
+          <ScalarProperty Name="LienHe" ColumnName="LienHe" />
+          <ScalarProperty Name="NgheNghiep" ColumnName="NgheNghiep" />
+          <ScalarProperty Name="LinkAnh" ColumnName="LinkAnh" />
+          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ThanhTiches">
+      <EntityTypeMapping TypeName="Model.ThanhTich">
+        <MappingFragment StoreEntitySet="ThanhTich">
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="MaHocSinh" ColumnName="MaHocSinh" />
+          <ScalarProperty Name="XepLoaiCaNam" ColumnName="XepLoaiCaNam" />
+          <ScalarProperty Name="CacThanhTichKhac" ColumnName="CacThanhTichKhac" />
+          <ScalarProperty Name="MaNam" ColumnName="MaNam" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
