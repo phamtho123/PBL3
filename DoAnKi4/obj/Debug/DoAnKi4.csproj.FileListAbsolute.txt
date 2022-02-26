@@ -1,0 +1,39 @@
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\bin\Debug\DoAnKi4.exe.config
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\bin\Debug\DoAnKi4.exe
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\bin\Debug\DoAnKi4.pdb
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.csprojAssemblyReference.cache
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form1.resources
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Properties.Resources.resources
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.csproj.GenerateResource.cache
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.csproj.CoreCompileInputs.cache
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.exe
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.pdb
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form2.resources
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form3.resources
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form4.resources
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form5.resources
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form6.resources
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form7.resources
+D:\MonHoc\ki4DoAn\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form8.resources
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\bin\Debug\DoAnKi4.exe.config
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\bin\Debug\DoAnKi4.exe
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\bin\Debug\DoAnKi4.pdb
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.csprojAssemblyReference.cache
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form1.resources
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form2.resources
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form3.resources
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form4.resources
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form5.resources
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form6.resources
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form7.resources
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Form8.resources
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.Properties.Resources.resources
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.csproj.GenerateResource.cache
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.csproj.CoreCompileInputs.cache
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.exe
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.pdb
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\bin\Debug\EntityFramework.dll
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\bin\Debug\EntityFramework.SqlServer.dll
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\bin\Debug\EntityFramework.xml
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\bin\Debug\EntityFramework.SqlServer.xml
+E:\Documents Leaning\documents_year_2\Ky_II\PBL_3\DoAnKi4\DoAnKi4\obj\Debug\DoAnKi4.csproj.CopyComplete

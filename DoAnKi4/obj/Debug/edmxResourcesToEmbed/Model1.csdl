@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Class">
+    <Key>
+      <PropertyRef Name="MaLop" />
+    </Key>
+    <Property Name="MaLop" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaGiaoVien" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TenLop" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SiSo" Type="Int32" />
+    <Property Name="SoNam" Type="Int32" />
+    <Property Name="SoNu" Type="Int32" />
+    <NavigationProperty Name="GiaoViens" Relationship="Self.FK__GiaoVien__MaLop__440B1D61" FromRole="Class" ToRole="GiaoVien" />
+    <NavigationProperty Name="HocSinhs" Relationship="Self.FK__HocSinh__MaLop__38996AB5" FromRole="Class" ToRole="HocSinh" />
+  </EntityType>
+  <EntityType Name="DiemTungMon">
+    <Key>
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="STT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaMonHoc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TenMonHoc" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MaHocSinh" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DiemHeSoI_HKI" Type="Double" />
+    <Property Name="DiemHeSoII_HKI" Type="Double" />
+    <Property Name="DiemHeSoIII_HKI" Type="Double" />
+    <Property Name="TongKet_HKI" Type="Double" />
+    <Property Name="DiemHeSoI_HKII" Type="Double" />
+    <Property Name="DiemHeSoII_HKII" Type="Double" />
+    <Property Name="DiemHeSoIII_HKII" Type="Double" />
+    <Property Name="TongKet_HKII" Type="Double" />
+    <Property Name="DiemTrungBinhCaNam" Type="Double" />
+    <Property Name="MaNam" Type="Int32" />
+    <NavigationProperty Name="HocSinh" Relationship="Self.FK__DiemTungM__MaHoc__403A8C7D" FromRole="DiemTungMon" ToRole="HocSinh" />
+    <NavigationProperty Name="NamHoc" Relationship="Self.FK__DiemTungM__MaNam__412EB0B6" FromRole="DiemTungMon" ToRole="NamHoc" />
+  </EntityType>
+  <EntityType Name="GiaoVien">
+    <Key>
+      <PropertyRef Name="MaGiaoVien" />
+    </Key>
+    <Property Name="MaGiaoVien" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaLop" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="NameGV" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="GioiTinh" Type="Boolean" />
+    <Property Name="DiaChi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LienHe" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LaGVCN" Type="Boolean" />
+    <Property Name="MaMonHoc" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LinkAnh" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MatKhau" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Class" Relationship="Self.FK__GiaoVien__MaLop__440B1D61" FromRole="GiaoVien" ToRole="Class" />
+  </EntityType>
+  <EntityType Name="HanhKiem">
+    <Key>
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="STT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaHocSinh" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="XepLoaiHanhKiemHKI" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="XepLoaiHanhKiemHKII" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="XepLoaiHanhKiemCaNam" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="MaNam" Type="Int32" />
+    <NavigationProperty Name="HocSinh" Relationship="Self.FK__HanhKiem__MaHocS__4AB81AF0" FromRole="HanhKiem" ToRole="HocSinh" />
+    <NavigationProperty Name="NamHoc" Relationship="Self.FK__HanhKiem__MaNam__4BAC3F29" FromRole="HanhKiem" ToRole="NamHoc" />
+  </EntityType>
+  <EntityType Name="HocSinh">
+    <Key>
+      <PropertyRef Name="MaHocSinh" />
+    </Key>
+    <Property Name="MaHocSinh" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaLop" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NameHS" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="NoiSinh" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NoiO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="GioiTinh" Type="Boolean" />
+    <Property Name="LienHe" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LinkAnh" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MatKhau" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Class" Relationship="Self.FK__HocSinh__MaLop__38996AB5" FromRole="HocSinh" ToRole="Class" />
+    <NavigationProperty Name="DiemTungMons" Relationship="Self.FK__DiemTungM__MaHoc__403A8C7D" FromRole="HocSinh" ToRole="DiemTungMon" />
+    <NavigationProperty Name="HanhKiems" Relationship="Self.FK__HanhKiem__MaHocS__4AB81AF0" FromRole="HocSinh" ToRole="HanhKiem" />
+    <NavigationProperty Name="PhuHuynh" Relationship="Self.FK__PhuHuynh__MaHocS__3D5E1FD2" FromRole="HocSinh" ToRole="PhuHuynh" />
+    <NavigationProperty Name="ThanhTiches" Relationship="Self.FK__ThanhTich__MaHoc__46E78A0C" FromRole="HocSinh" ToRole="ThanhTich" />
+  </EntityType>
+  <EntityType Name="NamHoc">
+    <Key>
+      <PropertyRef Name="MaNam" />
+    </Key>
+    <Property Name="MaNam" Type="Int32" Nullable="false" />
+    <Property Name="TenNam" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DiemTungMons" Relationship="Self.FK__DiemTungM__MaNam__412EB0B6" FromRole="NamHoc" ToRole="DiemTungMon" />
+    <NavigationProperty Name="HanhKiems" Relationship="Self.FK__HanhKiem__MaNam__4BAC3F29" FromRole="NamHoc" ToRole="HanhKiem" />
+    <NavigationProperty Name="ThanhTiches" Relationship="Self.FK__ThanhTich__MaNam__47DBAE45" FromRole="NamHoc" ToRole="ThanhTich" />
+  </EntityType>
+  <EntityType Name="PhuHuynh">
+    <Key>
+      <PropertyRef Name="MaHocSinh" />
+    </Key>
+    <Property Name="MaHocSinh" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NamePH" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="KhuVuc" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="QuanHeVoiHocSinh" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LienHe" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="NgheNghiep" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LinkAnh" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MatKhau" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="HocSinh" Relationship="Self.FK__PhuHuynh__MaHocS__3D5E1FD2" FromRole="PhuHuynh" ToRole="HocSinh" />
+  </EntityType>
+  <EntityType Name="ThanhTich">
+    <Key>
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="STT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaHocSinh" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="XepLoaiCaNam" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CacThanhTichKhac" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MaNam" Type="Int32" />
+    <NavigationProperty Name="HocSinh" Relationship="Self.FK__ThanhTich__MaHoc__46E78A0C" FromRole="ThanhTich" ToRole="HocSinh" />
+    <NavigationProperty Name="NamHoc" Relationship="Self.FK__ThanhTich__MaNam__47DBAE45" FromRole="ThanhTich" ToRole="NamHoc" />
+  </EntityType>
+  <Association Name="FK__GiaoVien__MaLop__440B1D61">
+    <End Role="Class" Type="Self.Class" Multiplicity="0..1" />
+    <End Role="GiaoVien" Type="Self.GiaoVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Class">
+        <PropertyRef Name="MaLop" />
+      </Principal>
+      <Dependent Role="GiaoVien">
+        <PropertyRef Name="MaLop" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HocSinh__MaLop__38996AB5">
+    <End Role="Class" Type="Self.Class" Multiplicity="1" />
+    <End Role="HocSinh" Type="Self.HocSinh" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Class">
+        <PropertyRef Name="MaLop" />
+      </Principal>
+      <Dependent Role="HocSinh">
+        <PropertyRef Name="MaLop" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DiemTungM__MaHoc__403A8C7D">
+    <End Role="HocSinh" Type="Self.HocSinh" Multiplicity="0..1" />
+    <End Role="DiemTungMon" Type="Self.DiemTungMon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HocSinh">
+        <PropertyRef Name="MaHocSinh" />
+      </Principal>
+      <Dependent Role="DiemTungMon">
+        <PropertyRef Name="MaHocSinh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DiemTungM__MaNam__412EB0B6">
+    <End Role="NamHoc" Type="Self.NamHoc" Multiplicity="0..1" />
+    <End Role="DiemTungMon" Type="Self.DiemTungMon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NamHoc">
+        <PropertyRef Name="MaNam" />
+      </Principal>
+      <Dependent Role="DiemTungMon">
+        <PropertyRef Name="MaNam" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HanhKiem__MaHocS__4AB81AF0">
+    <End Role="HocSinh" Type="Self.HocSinh" Multiplicity="0..1" />
+    <End Role="HanhKiem" Type="Self.HanhKiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HocSinh">
+        <PropertyRef Name="MaHocSinh" />
+      </Principal>
+      <Dependent Role="HanhKiem">
+        <PropertyRef Name="MaHocSinh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HanhKiem__MaNam__4BAC3F29">
+    <End Role="NamHoc" Type="Self.NamHoc" Multiplicity="0..1" />
+    <End Role="HanhKiem" Type="Self.HanhKiem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NamHoc">
+        <PropertyRef Name="MaNam" />
+      </Principal>
+      <Dependent Role="HanhKiem">
+        <PropertyRef Name="MaNam" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PhuHuynh__MaHocS__3D5E1FD2">
+    <End Role="HocSinh" Type="Self.HocSinh" Multiplicity="1" />
+    <End Role="PhuHuynh" Type="Self.PhuHuynh" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="HocSinh">
+        <PropertyRef Name="MaHocSinh" />
+      </Principal>
+      <Dependent Role="PhuHuynh">
+        <PropertyRef Name="MaHocSinh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ThanhTich__MaHoc__46E78A0C">
+    <End Role="HocSinh" Type="Self.HocSinh" Multiplicity="0..1" />
+    <End Role="ThanhTich" Type="Self.ThanhTich" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HocSinh">
+        <PropertyRef Name="MaHocSinh" />
+      </Principal>
+      <Dependent Role="ThanhTich">
+        <PropertyRef Name="MaHocSinh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ThanhTich__MaNam__47DBAE45">
+    <End Role="NamHoc" Type="Self.NamHoc" Multiplicity="0..1" />
+    <End Role="ThanhTich" Type="Self.ThanhTich" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NamHoc">
+        <PropertyRef Name="MaNam" />
+      </Principal>
+      <Dependent Role="ThanhTich">
+        <PropertyRef Name="MaNam" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLKQHS_DB" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Classes" EntityType="Self.Class" />
+    <EntitySet Name="DiemTungMons" EntityType="Self.DiemTungMon" />
+    <EntitySet Name="GiaoViens" EntityType="Self.GiaoVien" />
+    <EntitySet Name="HanhKiems" EntityType="Self.HanhKiem" />
+    <EntitySet Name="HocSinhs" EntityType="Self.HocSinh" />
+    <EntitySet Name="NamHocs" EntityType="Self.NamHoc" />
+    <EntitySet Name="PhuHuynhs" EntityType="Self.PhuHuynh" />
+    <EntitySet Name="ThanhTiches" EntityType="Self.ThanhTich" />
+    <AssociationSet Name="FK__GiaoVien__MaLop__440B1D61" Association="Self.FK__GiaoVien__MaLop__440B1D61">
+      <End Role="Class" EntitySet="Classes" />
+      <End Role="GiaoVien" EntitySet="GiaoViens" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HocSinh__MaLop__38996AB5" Association="Self.FK__HocSinh__MaLop__38996AB5">
+      <End Role="Class" EntitySet="Classes" />
+      <End Role="HocSinh" EntitySet="HocSinhs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DiemTungM__MaHoc__403A8C7D" Association="Self.FK__DiemTungM__MaHoc__403A8C7D">
+      <End Role="HocSinh" EntitySet="HocSinhs" />
+      <End Role="DiemTungMon" EntitySet="DiemTungMons" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DiemTungM__MaNam__412EB0B6" Association="Self.FK__DiemTungM__MaNam__412EB0B6">
+      <End Role="NamHoc" EntitySet="NamHocs" />
+      <End Role="DiemTungMon" EntitySet="DiemTungMons" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HanhKiem__MaHocS__4AB81AF0" Association="Self.FK__HanhKiem__MaHocS__4AB81AF0">
+      <End Role="HocSinh" EntitySet="HocSinhs" />
+      <End Role="HanhKiem" EntitySet="HanhKiems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HanhKiem__MaNam__4BAC3F29" Association="Self.FK__HanhKiem__MaNam__4BAC3F29">
+      <End Role="NamHoc" EntitySet="NamHocs" />
+      <End Role="HanhKiem" EntitySet="HanhKiems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PhuHuynh__MaHocS__3D5E1FD2" Association="Self.FK__PhuHuynh__MaHocS__3D5E1FD2">
+      <End Role="HocSinh" EntitySet="HocSinhs" />
+      <End Role="PhuHuynh" EntitySet="PhuHuynhs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ThanhTich__MaHoc__46E78A0C" Association="Self.FK__ThanhTich__MaHoc__46E78A0C">
+      <End Role="HocSinh" EntitySet="HocSinhs" />
+      <End Role="ThanhTich" EntitySet="ThanhTiches" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ThanhTich__MaNam__47DBAE45" Association="Self.FK__ThanhTich__MaNam__47DBAE45">
+      <End Role="NamHoc" EntitySet="NamHocs" />
+      <End Role="ThanhTich" EntitySet="ThanhTiches" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

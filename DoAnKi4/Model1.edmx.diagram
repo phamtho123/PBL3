@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2fc1a0b8e56f4394915c05106685b39b" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Class" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DiemTungMon" Width="1.5" PointX="5.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.GiaoVien" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.HanhKiem" Width="1.5" PointX="8.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.HocSinh" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NamHoc" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PhuHuynh" Width="1.5" PointX="5.25" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ThanhTich" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK__GiaoVien__MaLop__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__HocSinh__MaLop__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__DiemTungM__MaHoc__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__DiemTungM__MaNam__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__HanhKiem__MaHocS__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__HanhKiem__MaNam__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__PhuHuynh__MaHocS__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__ThanhTich__MaHoc__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__ThanhTich__MaNam__47DBAE45" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
